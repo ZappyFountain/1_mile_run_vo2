@@ -17,3 +17,4 @@ run_time1 = gr.Number(label = "Time spent running mile in seconds")
 gender1 = gr.CheckboxGroup(["Male", "Female"], label="Gender")
 
 demo= gr.Interface(calc_vo2, [run_time1, age1, weight1, height1, gender1], ["number"])
+demo.launch()
